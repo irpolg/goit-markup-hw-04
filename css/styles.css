@@ -22,8 +22,8 @@ img {
 
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;  /*вирівнює елементи всередині рядків: Елементи розташовані по центру контейнера*/
+    justify-content: space-between; /*Флекси рівномірно розподіляються по всьому рядку. Перший і останній флекс притискаються до відповідних країв контейнера*/
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -67,7 +67,8 @@ img {
 .menu-addr,
 .menu-visio,
 .menu-team,
-.menu-port {
+.menu-port,
+.menu-team-social {
     list-style:none;
 }
 
@@ -200,6 +201,14 @@ h2 {
     color: #2e2f42;
 }
 
+svg {
+    fill: #4D5AE5;
+}
+
+.svg-visio {
+    justify-content: center;
+}
+
 /* h3 заголовок */
 .h-visio {
     font-size: 20px;
@@ -272,6 +281,33 @@ h2 {
     color: #434455;
     text-align: center;
     margin: 0;
+}
+/*4hw   */
+.menu-team-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+/*4hw   
+.svg-team {
+    fill: #4D5AE5;
+}*/
+/*4hw   */
+.team-social-li-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        /*margin-left: 30px;
+        margin-right: 30px;*/
+        border-radius: 50%;
+        fill: #4D5AE5;
+        /*box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);*/
 }
 
 .port {
@@ -355,3 +391,4 @@ h2 {
 .logo-span-footer {
     color: #f4f4fd;
 }
+
