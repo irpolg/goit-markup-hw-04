@@ -212,20 +212,24 @@ h2 {
 
 svg {
     fill: #4D5AE5;
+
 }
-/*11-12-2023*/
+
 .svg-visio {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
+    width: 64;
+    height: 64;
 }
+
+/*11-12-2023*/
 /*11-12-2023*/
 .visio-ul-li-div {
     border-radius: 4px;
     margin-bottom: 8px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
 }
 
 
