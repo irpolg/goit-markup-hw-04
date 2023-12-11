@@ -125,15 +125,14 @@ img {
     text-align: center;
     height: 600px;
     padding: 188px 0;
-    /*реалізації фонового зображення з затемненням (багатошаровий фон з градієнтом)*/
+    background-image: background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/img-name.jpg);   
     max-width: 1440px; /*визначення ширини секції*/
     background-repeat: no-repeat; /*для уникнення повторення фонового зображення відносно його власної ширини та висоти*/
     background-position: center; /*вирівнювання фонового зображення відносно його власної ширини та висоти*/
     background-size: cover; /*для позиціонування зображення на всю площу фону елемента*/
-    background-image: background-image: 
-    linear-gradient(rgba(46, 47, 66, 0.7), 
-    rgba(46, 47, 66, 0.7)), 
-    url(../images/img-name.jpg);
 }   
 /*    margin-bottom: 120px; 07.12.2023 перевірка ментора*/
 
