@@ -37,7 +37,7 @@ img {
 }
 .header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow: зі значенням 
+    box-shadow:  
     0px 2px 1px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 1px 6px rgba(46, 47, 66, 0.08); 
@@ -91,7 +91,7 @@ img {
 }
 
 .menu::after {
-    content: "для встановлення вмісту для відображення в псевдоелементі";
+    content: " ";
     position: absolute;
     left: 0;
     bottom: -1px;
