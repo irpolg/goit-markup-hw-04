@@ -125,6 +125,14 @@ img {
     text-align: center;
     height: 600px;
     padding: 188px 0;
+    background-image: linear-gradient
+    (rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/img-name.jpg); /*реалізації фонового зображення з затемненням (багатошаровий фон з градієнтом)*/
+    max-width: 1440px; /*визначення ширини секції*/
+    background-repeat: no-repeat; /*для уникнення повторення фонового зображення відносно його власної ширини та висоти*/
+    background-position: center; /*вирівнювання фонового зображення відносно його власної ширини та висоти*/
+    background-size: cover; /*для позиціонування зображення на всю площу фону елемента*/
 }   
 /*    margin-bottom: 120px; 07.12.2023 перевірка ментора*/
 
@@ -158,6 +166,7 @@ img {
     border-radius: 4px; /* 06-12 заокруглення у кнопки*/
     margin-left: auto;
     margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавної зміни кольору фону елемента*/
 }
 
 button:hover, 
@@ -204,10 +213,21 @@ h2 {
 svg {
     fill: #4D5AE5;
 }
-
+/*11-12-2023*/
 .svg-visio {
     justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
 }
+/*11-12-2023*/
+.visio-ul-li-div {
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 
 /* h3 заголовок */
 .h-visio {
@@ -285,17 +305,17 @@ svg {
 /*4hw   */
 .menu-team-social {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 24px;
 }
 
-/*4hw   
+/*4hw   11-12-2023*/
 .svg-team {
-    fill: #4D5AE5;
-}*/
+    fill: #f4f4fd;
+}
 /*4hw   */
-.team-social-li-circle {
+/*.team-social-li-circle {
+.team-social-li {    
         display: flex;
         justify-content: center;
         align-items: center;
@@ -304,11 +324,34 @@ svg {
         flex-shrink: 0;
         /*margin-left: 30px;
         margin-right: 30px;*/
-        border-radius: 50%;
-        fill: #4D5AE5;
+        /*border-radius: 50%;*/
+        /*fill: #4D5AE5;*/
         /*box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
           0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);*/
+
+/*11-12-2023*/
+.team-social-li {    
+        width: 40px;
+        height: 40px;
 }
+/*11-12-2023*/
+.team-social-li-a {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*11-12-2023*/
+.team-social-li-a:hover,
+.team-social-li-a:focus {
+    background-color: #404bbf; 
+}
+
+
+
 
 .port {
     padding-top: 120px; 
@@ -391,4 +434,3 @@ svg {
 .logo-span-footer {
     color: #f4f4fd;
 }
-
