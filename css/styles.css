@@ -413,10 +413,9 @@ svg {
 }
 /*.menu-port-li:nth-child(1) {*/
 
-    .menu-port-li:first-child {
+    .menu-port-li:nth-child(2n) {
     transform: translateY(0%);
 }
-  
 
 .menu-port-li-div{
     padding: 32px 16px; 
