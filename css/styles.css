@@ -496,12 +496,14 @@ svg {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
+    margin: 0;     /*12-12-2023*/
     margin-bottom: 16px;
 }
 
 .menu-footer-social {
     display: flex;
     gap: 16px;
+    list-style: none;  /*12-12-2023*/
 }
 
 .footer-social-li {
