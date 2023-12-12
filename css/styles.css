@@ -483,6 +483,8 @@ svg {
 .container-footer-div {
     max-width: 1158px;
     padding: 0 15px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 156px;
     margin-right: 120px;
 }
