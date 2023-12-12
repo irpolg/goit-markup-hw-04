@@ -411,9 +411,8 @@ svg {
     0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
 }
-/*.menu-port-li:nth-child(1) {*/
 
-    .menu-port-li:nth-child(2n) {
+.menu-port-li:hover .menu-port-li-div-img-p {
     transform: translateY(0%);
 }
 
