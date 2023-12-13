@@ -84,8 +84,23 @@ img {
     padding: 24px 0;   
     display: block;    /*07.12.2023 перевірка ментора */
     position: relative; /*11-12-2023*/
-    color: #404bbf; 
+    color: #2e2f42; 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu.current {
+    color:#404bbf;
+}
+
+.menu.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 100%;
 }
 
 .menu::after {
@@ -96,8 +111,8 @@ img {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+    width: 100%;
 }
-
 
 .menu-nav .menu:hover,
 .menu-nav .menu:focus {
@@ -142,16 +157,16 @@ img {
     text-align: center;
     height: 600px;
     padding: 188px 0;
-    background-image: 
-    linear-gradient(rgba(46, 47, 66, 0.7), 
-    rgba(46, 47, 66, 0.7)), 
-    url(../images/img-name.jpg);   
+    margin: 0 auto;
+    background-image: url(../images/img-name.jpg);   
     max-width: 1440px; /*визначення ширини секції*/
     background-repeat: no-repeat; /*для уникнення повторення фонового зображення відносно його власної ширини та висоти*/
     background-position: center; /*вирівнювання фонового зображення відносно його власної ширини та висоти*/
     background-size: cover; /*для позиціонування зображення на всю площу фону елемента*/
 }   
-/*    margin-bottom: 120px; 07.12.2023 перевірка ментора*/
+/*  забрати margin-bottom: 120px; 07.12.2023 перевірка ментора
+забрати     linear-gradient(....) 
+ background-color: #2E2F42; перевірка ментора 13-12-2023*/
 
 .about-title {
     font-size: 56px;
@@ -239,6 +254,8 @@ svg {
 
 .visio-ul-li-div {
     border-radius: 4px;
+    border: 1px;
+    border-color: #8e8f99;
     margin-bottom: 8px;
     display:flex;
     align-items: center;
@@ -438,6 +455,7 @@ svg {
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    margin: 0;
 }
 
 .footer-text {
@@ -479,15 +497,11 @@ svg {
 }
 
 .container-footer-div {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin-top: 0;
-    margin-bottom: 0;
     margin-right: 120px;
 }
     /*margin: 0 auto;
-    margin-right: 120px;*/
-
+    max-width: 1158px;
+    padding: 0 15px; все це є в класі .container*/
 
 .footer-div-p-social {
     font-weight: 500;
