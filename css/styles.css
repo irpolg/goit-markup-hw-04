@@ -103,7 +103,7 @@ img {
     width: 100%;
 }
 
-.menu::after {
+/*.menu::after {
     content: '';
     position: absolute;
     left: 0;
@@ -112,7 +112,7 @@ img {
     background-color: #404bbf;
     border-radius: 2px;
     width: 100%;
-}
+}mentor 14-12-2023 */ 
 
 .menu-nav .menu:hover,
 .menu-nav .menu:focus {
@@ -161,7 +161,7 @@ img {
     background-image:  
     linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), 
-    url(../images/img-name.jpeg); /* для реалізації фонового зображення з затемненням (багатошаровий фон з градієнтом)   */
+    url(../images/img-name.jpg); /* для реалізації фонового зображення з затемненням (багатошаровий фон з градієнтом)   */
     max-width: 1440px; /*визначення ширини секції*/
     background-repeat: no-repeat; /*для уникнення повторення фонового зображення відносно його власної ширини та висоти*/
     background-position: center; /*вирівнювання фонового зображення відносно його власної ширини та висоти*/
@@ -259,6 +259,7 @@ svg {
     border-radius: 4px;
     border: 1px;
     border-color: #8e8f99;
+    border-style: solid;
     margin-bottom: 8px;
     display:flex;
     align-items: center;
@@ -343,7 +344,7 @@ svg {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    margin: 0;
+    margin: 0 0 8px;
 }
 /*4hw   */
 .menu-team-social {
